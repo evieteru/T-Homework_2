@@ -7,7 +7,17 @@ public class Student {
 	String name;
 	
 	
+	//Constructor
+	public Student(int id, double grade, String name) {
+		super();
+		this.id = id;
+		this.grade = grade;
+		this.name = name;
+	}
 	
+	
+	
+	//Getters and Setters
 	public int getId() {
 		return id;
 	}
@@ -26,6 +36,15 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", grade=" + grade + ", name=" + name + "]";
+	}
+	
+	
 	
 	
 
