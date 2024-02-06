@@ -37,6 +37,19 @@ public class StudentManager {
 		}
 		
 		fileInput.close();
+		
+		students = new Student[ids.size()]; // Let students to be of ids' size
+		
+		for (int i = 0; i < students.length; ++i) {
+			Student student = new Student(ids.get(i), names.get(i), grades.get(i));
+			if (student != null) { 
+				students[i] = student;  
+			}
+			else { // If student object initialization fails (student[index] = null still)
+				return false;  
+			}
+		}
+		
 		return true;
 	}
 	
