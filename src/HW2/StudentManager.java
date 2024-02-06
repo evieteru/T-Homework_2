@@ -7,9 +7,10 @@ import java.util.Scanner;
 
 public class StudentManager {
 	
+	Student[] students; // Use Student[] to store student objects.
 	
 	
-public boolean updateStudentGradeById(int id, double grade) {
+	public boolean updateStudentGradeById(int id, double grade) {
 		
 		if (searchStudentById(id) == false) {
 				return false;
