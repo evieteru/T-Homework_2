@@ -23,6 +23,19 @@ public class StudentManager {
 		catch (FileNotFoundException error) { // If file not found
 			return false;
 		}
+		
+		ArrayList<Integer> ids = new ArrayList<Integer>();
+		ArrayList<String> names = new ArrayList<String>();
+		ArrayList<Double> grades = new ArrayList<Double>();
+		
+		while (fileInput.hasNextLine()) {
+			ids.add(fileInput.nextInt()); // Store id
+			names.add(fileInput.next() + " " + fileInput.next()); // Store first last name
+			grades.add(fileInput.nextDouble()); // Store grade	
+			
+			fileInput.nextLine(); // Move to next line
+		}
+		
 		fileInput.close();
 		return true;
 	}
