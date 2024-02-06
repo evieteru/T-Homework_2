@@ -15,6 +15,15 @@ public class StudentManager {
 	 * @return false if file can't read/find file OR initialize objects
 	 */ 
 	public boolean readFromFile(String fileName) {
+		Scanner fileInput = null;
+		try {
+			FileInputStream file = new FileInputStream(fileName);
+			fileInput = new Scanner(file);			
+		}
+		catch (FileNotFoundException error) { // If file not found
+			return false;
+		}
+		fileInput.close();
 		return true;
 	}
 	
