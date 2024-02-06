@@ -9,6 +9,14 @@ public class StudentManager {
 	
 	Student[] students; // Use Student[] to store student objects.
 	
+	/** Read student data from a file using FileInputStream and Scanner.
+	 * @param fileName string of file path & name of file
+	 * @return true if file successfully read & initialized
+	 * @return false if file can't read/find file OR initialize objects
+	 */ 
+	public boolean readFromFile(String fileName) {
+		return true;
+	}
 	
 	public boolean updateStudentGradeById(int id, double grade) {
 		
