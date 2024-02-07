@@ -53,6 +53,19 @@ public class StudentManager {
 		return true;
 	}
 	
+	public boolean searchStudentById(int id) {
+		//iterate through students array
+		for (Student student : students) {
+			if (student.equals(id)) {
+				System.out.println("Student found:");
+				System.out.println(toString(student));
+				return true;
+			}
+		}
+		System.out.println("Student with id " + id + "does not exist.");
+		return false;
+	}
+	
 	public boolean updateStudentGradeById(int id, double grade) {
 		
 		if (searchStudentById(id) == false) {
