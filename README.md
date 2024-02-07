@@ -22,5 +22,5 @@ public boolean searchStudentById(int id)
 o Return true if student ID was found.
 o Return false if student ID was not found
 
-//what if studentID has int?? can we use .get() => memory location is better so we use equals() to help cover objects identical or not. get() can only do only exit, True & false
+//what if studentID has int?? can we use .get() => 1. if ID is an int, then we can use it to compare. Otherwise, if ID is not prim int, equal() is better. Search student class -> super -> id. Alos, memory location is better so we use equals() to help cover objects identical or not. get() can only do only exit, True & false
 Update student: (Evie)
