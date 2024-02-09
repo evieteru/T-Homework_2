@@ -64,7 +64,9 @@ public class StudentManager {
 		for (Student student : students) {
 			if (student.equals(id)) {
 				System.out.println("Student found:");
-				System.out.println(toString(student));
+				//System.out.println(toString(student));
+				System.out.println(student.toString());
+
 				return true;
 			}
 		}
