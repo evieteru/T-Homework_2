@@ -9,3 +9,8 @@ Program that manages information about students. The program reads student data 
 
 *To set student's grade*: Call updateStudentGradeById(id, grade), pass in id as an int & grade as a double
 # **Dependencies**
+Modules used:
+* import java.io.FileInputStream;
+* import java.io.FileNotFoundException;
+* import java.util.ArrayList;
+* import java.util.Scanner;
