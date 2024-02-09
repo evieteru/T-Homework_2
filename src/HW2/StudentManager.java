@@ -65,8 +65,6 @@ public class StudentManager {
 			if (student.getId() == id) {
 				System.out.println("Student found:");
 
-				System.out.println(student.toString());
-
 				//System.out.println(toString(student));
 				System.out.println(student.toString());
 
