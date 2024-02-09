@@ -10,14 +10,14 @@ public class StudentManager {
     		}
 
     		if (totalStudents == 0) {
-        		System.out.println("Error, check student ID, Null objects in array if something get removed and there are nothing in there");
+        		System.out.println("Error occured, check student ID, Null objects in array if something get removed and there are nothing in there");
     		} else {
         		System.out.println("Student List:");
-        		System.out.printf("%-5s%-15s%-10s%n", "ID", "Name", "Grade");
+        		System.out.printf("%-8s%-15s%-10s%n", "ID", "Name", "Grade");
         		System.out.println("###########################");
         		for (Student student : students) {
             			if (student != null) {
-                			System.out.printf("%-5d%-15s%-10.2f%n", student.getId(), student.getName(), student.getGrade());
+                			System.out.printf("%-8d%-15s%-10.2f%n", student.getId(), student.getName(), student.getGrade());
             			}
        			}
         		System.out.println("###########################");
