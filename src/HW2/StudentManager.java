@@ -41,7 +41,8 @@ public class StudentManager {
 		students = new Student[ids.size()]; // Let students to be of ids' size
 		
 		for (int i = 0; i < students.length; ++i) {
-			Student student = new Student(ids.get(i), names.get(i), grades.get(i));
+			Student student = new Student(ids.get(i), grades.get(i), names.get(i));
+
 			if (student != null) { 
 				students[i] = student;  
 			}
@@ -52,13 +53,24 @@ public class StudentManager {
 		
 		return true;
 	}
-	
+	public void displayAllStudents() {
+    		for (Student student : students) {
+        	System.out.println(student.toString()); // Correctly calls toString() on each student
+    		}
+	}
+
 	public boolean searchStudentById(int id) {
 		//iterate through students array
 		for (Student student : students) {
 			if (student.equals(id)) {
 				System.out.println("Student found:");
+<<<<<<< HEAD
 				System.out.println(student.toString());
+=======
+				//System.out.println(toString(student));
+				System.out.println(student.toString());
+
+>>>>>>> a686317ce60693364fd4352769f0988a3feb1319
 				return true;
 			}
 		}
