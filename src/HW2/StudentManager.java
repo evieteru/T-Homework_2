@@ -62,19 +62,19 @@ public class StudentManager {
 	public boolean searchStudentById(int id) {
 		//iterate through students array
 		for (Student student : students) {
-			if (student.equals(id)) {
+			if (student.getId() == id) {
 				System.out.println("Student found:");
-<<<<<<< HEAD
+
 				System.out.println(student.toString());
-=======
+
 				//System.out.println(toString(student));
 				System.out.println(student.toString());
 
->>>>>>> a686317ce60693364fd4352769f0988a3feb1319
+
 				return true;
 			}
 		}
-		System.out.println("Student with id " + id + "does not exist.");
+		System.out.println("Student with id " + id + " does not exist.");
 		return false;
 	}
 	
